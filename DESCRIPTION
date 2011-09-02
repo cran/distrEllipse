@@ -1,6 +1,6 @@
 Package: distrEllipse
-Version: 2.3
-Date: 2010-12-03
+Version: 2.3.1
+Date: 2011-09-02
 Title: S4 classes for elliptically contoured distributions
 Depends: R(>= 2.8.0), methods, graphics, mvtnorm, setRNG(>= 2006.2-1),
         distr(>= 2.2), distrEx(>= 2.2), distrSim(>= 2.2), startupmsg
@@ -17,8 +17,6 @@ LastChangedDate: {$LastChangedDate: 2009-03-31 15:31:30 +0200 (Di, 31
         Mrz 2009) $}
 LastChangedRevision: {$LastChangedRevision: 447 $}
 SVNRevision: 699
+Packaged: 2011-09-02 15:53:33 UTC; ruckdesc
 Repository: CRAN
-Repository/R-Forge/Project: distr
-Repository/R-Forge/Revision: 712
-Date/Publication: 2011-01-20 14:55:16
-Packaged: 2011-01-05 21:57:17 UTC; rforge
+Date/Publication: 2011-10-19 13:19:08
