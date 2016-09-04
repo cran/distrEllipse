@@ -43,11 +43,27 @@ setReplaceMethod("radDistr", "SphericalDistribution",
 ## wrappers:
 
 setMethod("plot.rd", "SphericalDistribution",
+           function(x, ... ){ .Deprecated("plotRd")
+                              plot(x@radDistr,...)})
+setMethod("r.rd", "SphericalDistribution", function(object) {
+                                                .Deprecated("rRd")
+                                                r(object@radDistr)})
+setMethod("d.rd", "SphericalDistribution", function(object) {
+                                                .Deprecated("dRd")
+                                                d(object@radDistr)})
+setMethod("p.rd", "SphericalDistribution", function(object) {
+                                                .Deprecated("pRd")
+                                                p(object@radDistr)})
+setMethod("q.rd", "SphericalDistribution", function(object) {
+                                                .Deprecated("qRd")
+                                                q(object@radDistr)})
+
+setMethod("plotRd", "SphericalDistribution",
            function(x, ... ) plot(x@radDistr,...))
-setMethod("r.rd", "SphericalDistribution", function(object) r(object@radDistr))
-setMethod("d.rd", "SphericalDistribution", function(object) d(object@radDistr))
-setMethod("p.rd", "SphericalDistribution", function(object) p(object@radDistr))
-setMethod("q.rd", "SphericalDistribution", function(object) q(object@radDistr))
+setMethod("rRd", "SphericalDistribution", function(object) r(object@radDistr))
+setMethod("dRd", "SphericalDistribution", function(object) d(object@radDistr))
+setMethod("pRd", "SphericalDistribution", function(object) p(object@radDistr))
+setMethod("qRd", "SphericalDistribution", function(object) q(object@radDistr))
 
 ## functionals:
 
@@ -90,16 +106,16 @@ setMethod("plot", signature(x = "SphericalDistribution", y = "missing"),
       dots <- match.call(call = sys.call(sys.parent(1)),
                          expand.dots = FALSE)$"..."
       cex <- 0.5
-      if(hasArg(cex)) cex <- dots$cex
+      if(hasArg("cex")) cex <- dots$cex
       col <- "black"
-      if(hasArg(col)) col <- dots$col
+      if(hasArg("col")) col <- dots$col
       
       qchs <- qchisq(.95, df = 2)^.5
       col.Ed <- rep(col.Ed, length.out = 2)
 
       X <- r(x)(2000)
 
-      if(hasArg(panel))
+      if(hasArg("panel"))
          pairs(t(X), ...)
       else
          pairs(t(X), ...,

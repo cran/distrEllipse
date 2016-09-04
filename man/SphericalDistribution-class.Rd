@@ -7,6 +7,11 @@
 \alias{dim,SphericalDistribution-method}
 \alias{radDistr,SphericalDistribution-method}
 \alias{radDistr<-,SphericalDistribution-method}
+\alias{plotRd,SphericalDistribution-method}
+\alias{rRd,SphericalDistribution-method}
+\alias{dRd,SphericalDistribution-method}
+\alias{pRd,SphericalDistribution-method}
+\alias{qRd,SphericalDistribution-method}
 \alias{plot.rd,SphericalDistribution-method}
 \alias{r.rd,SphericalDistribution-method}
 \alias{d.rd,SphericalDistribution-method}
@@ -14,11 +19,11 @@
 \alias{q.rd,SphericalDistribution-method}
 \alias{radDistr}
 \alias{radDistr<-}
-\alias{plot.rd}
-\alias{r.rd}
-\alias{d.rd}
-\alias{p.rd}
-\alias{q.rd}
+\alias{plotRd}
+\alias{rRd}
+\alias{dRd}
+\alias{pRd}
+\alias{qRd}
 \alias{E,SphericalDistribution,missing,missing-method}
 \alias{var,SphericalDistribution-method}
 \alias{coerce,SphericalDistribution,EllipticalDistribution-method}
@@ -102,19 +107,23 @@ Class \code{"Distribution"}, by class \code{"MultivariateDistribution"}.
     always returns the unit matrix  (in the respective dimension). }
     \item{radDistr}{\code{signature(object = "SphericalDistribution")}: access method for
       slot \code{radDistr}. }
-    \item{r.rd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
-      slot \code{r} of slot \code{radDistr}. }
-    \item{d.rd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
-      slot \code{d} of slot \code{radDistr}. }
-    \item{p.rd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
-      slot \code{p} of slot \code{radDistr}. }
-    \item{q.rd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
-      slot \code{q} of slot \code{radDistr}. }
-    \item{plot.rd}{\code{signature(x = "SphericalDistribution")}: utility; calls \code{plot}
-      for slot \code{radDistr}. }
+    \item{rRd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
+      slot \code{r} of slot \code{radDistr}. From version 2.6 on, replaces deprecated 
+      \code{r.Rd} to avoid clashes with S3-method inheritance. }
+    \item{dRd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
+      slot \code{d} of slot \code{radDistr}. From version 2.6 on, replaces deprecated 
+      \code{d.Rd} to avoid clashes with S3-method inheritance.  }
+    \item{pRd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
+      slot \code{p} of slot \code{radDistr}. From version 2.6 on, replaces deprecated 
+      \code{p.Rd} to avoid clashes with S3-method inheritance.  }
+    \item{qRd}{\code{signature(object = "SphericalDistribution")}: wrapped access method for
+      slot \code{q} of slot \code{radDistr}. From version 2.6 on, replaces deprecated 
+      \code{q.Rd} to avoid clashes with S3-method inheritance.  }
+    \item{plotRd}{\code{signature(x = "SphericalDistribution")}: utility; calls \code{plot}
+      for slot \code{radDistr}. From version 2.6 on, replaces deprecated 
+      \code{plot.Rd} to avoid clashes with S3-method inheritance.  }
     \item{plot}{\code{signature(x = "SphericalDistribution", y = "missing")}:
-      plot for an spherically symmetric distribution; see \code{\link{plot-methods}}.
-    }
+      plot for an spherically symmetric distribution; see \code{\link{plot-methods}}. }
     \item{show}{\code{signature(object = "SphericalDistribution")}: 
       \code{show} method for spherically symmetric distributions.
     }
@@ -157,7 +166,7 @@ Class \code{"Distribution"}, by class \code{"MultivariateDistribution"}.
 
   }
 }
-\author{Peter Ruckdeschel \email{Peter.Ruckdeschel@itwm.fraunhofer.de}}
+\author{Peter Ruckdeschel \email{peter.ruckdeschel@uni-oldenburg.de}}
 \examples{
 new("SphericalDistribution") ## better use SphericalDistribution()
 }

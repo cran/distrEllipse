@@ -6,6 +6,7 @@
 \alias{scale<-,EllipticalDistribution-method}
 \alias{location<-,EllipticalDistribution-method}
 \alias{E,EllipticalDistribution,missing,missing-method}
+\alias{E,EllipticalDistribution,function,missing-method}
 \alias{var,EllipticalDistribution-method}
 \alias{+,EllipticalDistribution,numeric-method}
 \alias{*,EllipticalDistribution,numeric-method}
@@ -84,6 +85,9 @@ Class \code{"Distribution"}, by class \code{"MultivariateDistribution"}.
     \item{E}{\code{signature(object = "EllipticalDistribution", fun = "missing", cond = "missing")}: 
       expectation of an elliptically symmetric distribution; exact.
     }
+    \item{E}{\code{signature(object = "EllipticalDistribution", fun = "function", cond = "missing")}: 
+      expectation of an elliptically symmetric distribution; by simulation.
+    }
     \item{var}{\code{signature(x = "EllipticalDistribution")}: 
       expectation of an elliptically symmetric distribution; exact.
     }
@@ -107,7 +111,7 @@ Class \code{"Distribution"}, by class \code{"MultivariateDistribution"}.
       univariate distribution. }
   }
 }
-\author{Peter Ruckdeschel \email{Peter.Ruckdeschel@itwm.fraunhofer.de}}
+\author{Peter Ruckdeschel \email{peter.ruckdeschel@uni-oldenburg.de}}
 \examples{
 new("EllipticalDistribution") ## better use EllipticalDistribution()
 }
