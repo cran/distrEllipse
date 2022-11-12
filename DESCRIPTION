@@ -1,6 +1,6 @@
 Package: distrEllipse
-Version: 2.8.0
-Date: 2019-04-02
+Version: 2.8.1
+Date: 2022-11-12
 Title: S4 Classes for Elliptically Contoured Distributions
 Description: Distribution (S4-)classes for elliptically contoured distributions (based on
             package 'distr').
@@ -17,10 +17,10 @@ Encoding: latin1
 LastChangedDate: {$LastChangedDate: 2019-04-02 21:10:55 +0200 (Di, 02
         Apr 2019) $}
 LastChangedRevision: {$LastChangedRevision: 1337 $}
-VCS/SVNRevision: 1336
+VCS/SVNRevision: 1380
 NeedsCompilation: no
-Packaged: 2019-04-02 19:21:03 UTC; ruckdesc
+Packaged: 2022-11-12 22:26:20 UTC; ruckdesc
 Author: Peter Ruckdeschel [aut, cre, cph]
 Maintainer: Peter Ruckdeschel <peter.ruckdeschel@uni-oldenburg.de>
 Repository: CRAN
-Date/Publication: 2019-04-04 16:40:02 UTC
+Date/Publication: 2022-11-12 22:40:12 UTC
