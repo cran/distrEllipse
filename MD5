@@ -1,4 +1,4 @@
-659c8710599eb2bbe1a39424d23624b8 *DESCRIPTION
+bc1d928dad666fa7bb4fb57d917df63e *DESCRIPTION
 27d2763102a666dd1f1386b6dd279656 *NAMESPACE
 25762abcbb8db73d1f2ccf8c5b5e0f24 *R/01.R
 d760e8e7b03d24932093f3b8619776b7 *R/AllClasses.R
@@ -11,11 +11,11 @@ d7317f8ee010456cf339aac1f3c83b93 *R/MVt.R
 9405c6afc381c584972d03a17adbee94 *R/MultivariateDistrList.R
 b08832e68b9242663322a0dd9f9ed7c1 *R/SphericalDistribution.R
 fa6fbb7c31ef197df858a86f22feb705 *R/distrEllipseOptions.R
-d7bbcf064d18f9b68128503f2f9cc5a8 *inst/CITATION
+c0420a1c443d810f19ea320d012c5f35 *inst/CITATION
 ec874d57e2afdf3d29d36abf8c5e967d *inst/MASKING
-f9646df8f0fd52ad161655408179591d *inst/NEWS
+435d36c9c22630dea897d22e67652bf2 *inst/NEWS
 f1bb9669ed85659c2e0310955ca2c3be *inst/TOBEDONE
-49e2544cb93b50142da122471609c9e4 *man/0distrEllipse-package.Rd
+184b582f5e6ff8eb5d5dcf3c1575f167 *man/0distrEllipse-package.Rd
 04273bf3007c9807f575dad0615c1b42 *man/EllipticalDistribution-class.Rd
 4f989ee583a6fc696007d7aa1ebba499 *man/EllipticalDistribution.Rd
 ca7b028cc943ac5abfa2f782e1992500 *man/EllipticalParameter-class.Rd
